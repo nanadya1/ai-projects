@@ -318,7 +318,7 @@ print(f"DFS Graph | {' -> '.join(path_states(res_graph))} | ekspansi={stats_grap
 print("-- Pada 8-Puzzle kasus 'sedang' (4, 1, 3, 7, 2, 6, 0, 5, 8):")
 puz_sedang = EightPuzzle((4, 1, 3, 7, 2, 6, 0, 5, 8))
 stats_t = {"expanded": 0, "max_frontier": 0}
-res_t = depth_first_search_tree(puz_sedang, stats_t)
+res_t = depth_first_search_graph(puz_sedang, stats_t)
 print(f"DFS Tree  | langkah={res_t.depth if res_t else 'N/A'}, ekspansi={stats_t['expanded']}, max_frontier={stats_t['max_frontier']}")
 
 stats_g = {"expanded": 0, "max_frontier": 0}
